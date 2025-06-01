@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Steganography</title>
+</head>
+<body>
+    <h1>Embed Message in Audio</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio" required>
+        <input type="text" name="message" placeholder="Enter secret message" required>
+        <button type="submit">Embed</button>
+    </form>
+
+    <h1>Extract Message from Audio</h1>
+    <form action="/extract" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio" required>
+        <button type="submit">Extract</button>
+    </form>
+</body>
+</html>
